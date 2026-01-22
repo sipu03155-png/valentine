@@ -121,8 +121,8 @@ function handleYes() {
  
 
 
-  document.body.innerHTML = `
-    <div style="margin-top:60px;">
+ // document.body.innerHTML = `
+   // <div style="margin-top:60px;">
       <h1 id="name" style="color:#ff4d6d; font-size:42px;"></h1>
 
       <p class="line" style="opacity:0;">💖 Surpriseee!</p>
@@ -135,7 +135,7 @@ function handleYes() {
 
       <img src="cat.png" width="140" style="margin-top:20px;">
     </div>
-  `;
+//  `;
 
   typeWriter("Yayyyy you said yes my love 💖😘", "name", () => {
 
@@ -207,6 +207,7 @@ function confettiBurst() {
     setTimeout(() => confetti.remove(), 3000);
   }
 }
+
 
 
 
