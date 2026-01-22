@@ -106,7 +106,9 @@ if (noClickCount >= noTexts.length) {
 
 // ====== YES BUTTON ======
 function handleYes() {
+  const music = document.getElementById("bgMusic");
   music.play();
+
 
   document.body.innerHTML = `
     <div style="margin-top:60px;">
@@ -194,3 +196,4 @@ function confettiBurst() {
     setTimeout(() => confetti.remove(), 3000);
   }
 }
+
