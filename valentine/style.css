@@ -1,0 +1,70 @@
+body {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background: #fff0f5;
+  padding-top: 60px;
+}
+
+button {
+  padding: 12px 25px;
+  font-size: 18px;
+  margin: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.yes {
+  background: green;
+  color: white;
+}
+
+.no {
+  background: red;
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+#messageBox {
+  margin-top: 30px;
+}
+
+.heart {
+  position: fixed;
+  font-size: 24px;
+  animation: float 2s ease-out forwards;
+}
+
+@keyframes float {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-150px);
+    opacity: 0;
+  }
+}
+#name {
+  font-size: 32px;
+  color: #ff2f6d;
+  animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #ff9ab8;
+  }
+  to {
+    text-shadow: 0 0 25px #ff2f6d;
+  }
+}
+@keyframes fall {
+  to {
+    transform: translateY(110vh) rotate(360deg);
+    opacity: 0;
+  }
+}
