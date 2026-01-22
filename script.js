@@ -1,3 +1,8 @@
+// 🎵 Background music
+const music = new Audio("music.mp3");
+music.loop = true;
+music.volume = 0.7;
+
 // ====== ADD GLOBAL STYLES (BUTTONS + HEART ANIMATION) ======
 const style = document.createElement("style");
 style.innerHTML = `
@@ -206,6 +211,7 @@ function confettiBurst() {
     setTimeout(() => confetti.remove(), 3000);
   }
 }
+
 
 
 
