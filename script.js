@@ -107,11 +107,17 @@ if (noClickCount >= noTexts.length) {
 // ====== YES BUTTON ======
 function handleYes() {
   const music = document.getElementById("bgMusic");
-  music.volume = 0.7;
+
+  music.muted = true;
+  music.play();
+
+  setTimeout(() => {
+    music.muted = false;
+  music.volume = 0.8;
   music.currentTime = 0;
-  music.play().catch(err => {
-    console.log("Audio play blocked:", err);
-  });
+  music.play();
+  },  300);
+ 
 
 
   document.body.innerHTML = `
@@ -200,5 +206,6 @@ function confettiBurst() {
     setTimeout(() => confetti.remove(), 3000);
   }
 }
+
 
 
