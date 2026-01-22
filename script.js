@@ -113,15 +113,11 @@ if (noClickCount >= noTexts.length) {
 function handleYes() {
   const music = document.getElementById("bgMusic");
 
-  music.muted = true;
-  music.play();
-
-  setTimeout(() => {
-    music.muted = false;
-  music.volume = 0.8;
   music.currentTime = 0;
+  music.volume = 0.8;
+  music.muted = false;
   music.play();
-  },  300);
+  },  
  
 
 
@@ -211,6 +207,7 @@ function confettiBurst() {
     setTimeout(() => confetti.remove(), 3000);
   }
 }
+
 
 
 
